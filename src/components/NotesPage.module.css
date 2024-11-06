@@ -1,0 +1,22 @@
+.container{
+    background-color: #DAE5F5;
+    width:72vw;
+    height: 100vh;
+    }
+
+    .items{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        gap: 10px;
+    }
+
+    .encrypt{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: end;
+        margin-top: 100px;
+    }

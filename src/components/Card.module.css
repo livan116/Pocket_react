@@ -1,0 +1,28 @@
+
+
+.list{
+    list-style: none;
+    
+}
+
+
+.cardItem{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(0, 0, 0,0.5);
+    overflow-wrap: anywhere;
+}
+
+.noteInfo{
+    display: flex;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    justify-content: end;
+    gap: 10px;
+}

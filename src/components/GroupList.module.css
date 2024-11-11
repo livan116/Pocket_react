@@ -18,7 +18,9 @@
 
 .list{
     overflow: auto;
-    height: 87vh;
+    height: 85vh;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 .list::-webkit-scrollbar {
@@ -39,6 +41,7 @@
 .plus{
     position: sticky;
     bottom: 40px;
+    left: 160px;
     margin-right: 20px;
     display: flex;
     justify-content: end;
@@ -54,17 +57,49 @@
     border: none;
 }
 
-li{
-    background-color: aqua;
-    margin-top: 50px;
+.list li{
+    margin: 20px 0 20px 20px;
+    margin-left: 20px;
+    /* padding: 10px; */
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
 }
 
 .icon{
-    background-color: red;
-    padding: 20px;
     border-radius: 50%;
+    color: #ffffff;
+    height:70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listItem{
+    overflow-wrap: anywhere;
+}
+
+.selected{
+    background-color: #2F2F2F2B;
+    border-radius: 15px;
+}
+
+
+@media only screen and (max-width: 430px){
+    .container{
+        width:100vw; 
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .container{
+        width:100vw; 
+        height: 100vh;
+    }
+    .list{
+        margin-left: 20px;
+    }
 }

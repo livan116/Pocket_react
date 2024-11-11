@@ -1,0 +1,118 @@
+.container{
+    background-color: #DAE5F5;
+    width:72vw;
+    height: 100vh;
+}
+
+.navHead{
+    background-color: #001F8B;
+    height: auto;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    display:flex;
+    justify-content: start;
+    align-items: center;
+    gap:30px
+}
+
+.shortName{
+    color: #ffffff;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    height:70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.name{
+    color:#ffffff;
+}
+
+.content{
+    height: 60vh;
+    overflow: auto;
+}
+
+.content::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+.content::-webkit-scrollbar-track {
+    background: #000000A1; 
+    border-radius: 20px;  
+
+  }
+  
+.content::-webkit-scrollbar-thumb {
+    background-color: #ffffff;  
+    border-radius: 20px;
+  }
+
+.footer{
+    height: 40vh;
+    background-color: #001F8B;
+}
+
+.textArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 27vh;
+}
+
+textarea{
+    height: 23vh;
+    width: 70vw;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.enter{
+    position: fixed;
+    right: 2.5vw;
+    top: 92vh;
+}
+
+.buttonBtn{
+    font-size: 2rem;
+    font-weight: 900;
+    background-color: transparent;
+    color: #ffffff;
+    outline: none;
+    border:none
+}
+
+@media only screen and (max-width: 430px){
+    .container{
+    width:100vw;
+    height: 100vh;
+    }
+
+    textarea{
+        height: 22vh;
+        width: 95vw;
+    }
+
+    .enter{
+        position: fixed;
+        right: 3vw;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .container{
+    width:100vw;
+    height: 100vh;
+    }
+    textarea{
+        height: 22vh;
+        width: 97vw;
+        padding: 10px;
+    }
+}
+

@@ -1,21 +1,22 @@
 .modalChildren{
     background-color: #ffffff;
-    width: auto;
+
     border-radius: 20px;
     padding: 30px;
-    
 }
 
 .modal{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
     height: 100vh;
     background-color: rgb(0,0,0,0.5);
 }
 
 .heading{
-    font-size: 2rem;
+    font-size: 1.8rem;
+    font-weight: 500;
     text-align: left;
     margin-bottom: 15px;
 }
@@ -27,6 +28,7 @@
 
 label{
     font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .color{
@@ -45,6 +47,7 @@ input{
 .createBtn{
     display: flex;
     justify-content: end;
+    align-items: end;
 }
 
 .create{
@@ -53,4 +56,121 @@ input{
     border: none;
     background-color: #16008B;
     color: #ffffff;
+    margin-top: 20px;
+    float: right;
+}
+
+.colorBtn{
+    padding: 20px 20px;
+    border-radius: 50%;
+    border: none;
+    
+}
+
+.chooseColors{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 3vw;
+}
+
+.chooseColors p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.colors{
+    display: flex;
+    gap: 10px;
+}
+
+.error{
+    height:20px;
+    width: auto;
+    /* margin: 20px; */
+}
+
+.errorColor{
+    height:20px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: red;
+
+}
+
+.selected{
+    border: 1px solid rgb(71, 71, 244);
+}
+
+@media screen and (max-width: 426px){
+    .modal{
+        width: 100vw;
+        height: 100vh;
+
+    }
+
+    .modalChildren{
+        width: 92%;
+        /* padding: 10px 30px 10px 20px; */
+    }   
+    
+    .heading{
+        font-size: 1.5rem;
+    }
+
+    .name{
+        display: flex;
+        align-items: center;
+        gap:10px
+    }
+    input{
+        width: 40vw;
+    }
+
+    label{
+        font-size: 0.8rem;
+    }
+
+    .errorColor{
+        font-size: 1rem;
+    }
+    .chooseColors {
+        gap: 1vw;
+        padding-right: 100px;
+    }
+    .chooseColors p{
+        font-size: 0.8rem;
+    }
+    .colors{
+        gap: 5px;
+        width: 25vw;
+    }
+    .colorBtn{
+        padding: 10px 10px;
+    }
+    .selected{
+        border: 1px solid rgb(71, 71, 244);
+    }
+    .errorColor{
+        font-size: 0.8rem;
+    }
+    
+}
+
+@media only screen and (max-width: 768px){
+    .modal{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    input{
+        width: 35vw;
+    }
+    .modalChildren{
+        width: 70vw;
+    }    
+   
 }

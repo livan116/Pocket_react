@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./NotesPage.module.css";
 import img from "../assets/image.png";
-import lock from "../assets/vector.png";
+import lock from "../assets/Vector.png";
 
 export default function NotesPage() {
   return (
